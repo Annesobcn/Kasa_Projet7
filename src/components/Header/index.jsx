@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-import colors from '../../utils/style/colors'
 import LogoKasa from '../../assets/LogoKasa.svg'
 
 const HomeLogo = styled.img`
@@ -15,16 +14,15 @@ const NavContainer = styled.nav`
   align-items: center;
 `
 export const StyledLink = styled(Link)`
-  padding: 10px 15px;
-  color: #8186a0;
+  padding: 2px 15px;
+  font-family: Montserrat;
+  color: #ff6060;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 24px;
   text-align: center;
-  ${(props) =>
-    props.$isFullLink &&
-    `color: white; 
-    border-radius: 30px; 
-    background-color: ${colors.primary};`}
+  &:active {
+    border-bottom: 1px solid;
+  }
 `
 
 function Header() {
@@ -35,7 +33,7 @@ function Header() {
       </Link>
       <div>
         <StyledLink to="/">Accueil</StyledLink>
-        <StyledLink to="/src/pages/Apropos">A propos</StyledLink>
+        <StyledLink to="/about">A propos</StyledLink>
       </div>
     </NavContainer>
   )

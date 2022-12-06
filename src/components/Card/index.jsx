@@ -27,7 +27,6 @@ const CardImage = styled.img`
 const CardWrapper = styled.div`
   width: 340px;
   height: 340px;
-  z-index: 0;
   border-radius: 10px;
   margin: 10px;
   background: rgb(11, 11, 11);
@@ -36,8 +35,10 @@ const CardWrapper = styled.div`
     rgba(11, 11, 11, 1) 0%,
     rgba(255, 255, 255, 0.006711409395973145) 50%
   );
+  transition: 200ms;
   &:hover {
     cursor: pointer;
+    box-shadow: 2px 2px 8px #e2e3e9;
   }
 `
 
@@ -59,8 +60,12 @@ class Card extends Component {
 }
 
 Card.propTypes = {
-  title: propTypes.string.isRequired,
   picture: propTypes.string.isRequired,
+  title: propTypes.string.isRequired,
 }
 
+Card.defaultProps = {
+  picture: '',
+  title: '',
+}
 export default Card

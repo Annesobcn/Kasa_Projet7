@@ -1,6 +1,7 @@
 import { Link, useLocation } from 'react-router-dom'
 import styled from 'styled-components'
 import LogoKasa from '../../assets/LogoKasa.svg'
+import colors from '../../utils/style/colors'
 
 const HomeLogo = styled.img`
   height: 7vh;
@@ -20,7 +21,7 @@ const NavContainer = styled.nav`
 export const StyledLink = styled(Link)`
   padding: 2px 15px;
   font-family: Montserrat;
-  color: #ff6060;
+  color: ${colors.primary};
   text-decoration: none;
   font-size: 1.5rem;
   text-align: center;

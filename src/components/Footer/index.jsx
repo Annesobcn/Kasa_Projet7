@@ -17,7 +17,7 @@ const FooterContainer = styled.footer`
   font-size: 16px;
 `
 
-const FooterText = styled.text`
+const FooterText = styled.span`
   color: white;
   font-family: montserrat;
   font-size: 1.5rem;

@@ -4,7 +4,7 @@ import BackgroundImage from '../../assets/BackgroundSectionHeader1.svg'
 
 const BannerContainer = styled.div`
   position: relative;
-  background-color: #f6f6f6;
+  background-color: ${colors.secondary};
   border-radius: 25px;
   height: 223px;
   width: 90vw;
@@ -19,7 +19,7 @@ const BannerImage = styled.img`
   border-radius: 25px;
   filter: brightness(0.7);
 `
-const BannerText = styled.text`
+const BannerText = styled.span`
   position: absolute;
   text-align: center;
   top: 35%;

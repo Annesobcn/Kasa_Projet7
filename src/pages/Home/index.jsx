@@ -5,32 +5,36 @@ import Card from '../../components/Card'
 import logements from '../../assets/logements.json'
 
 const HomeContainer = styled.div`
-  width: 100v8;
-  max-width: 1440px;
-  height: 100v8;
-  max-height: 1095px;
-  color: ff6060;
-`
-const CardsSection = styled.section`
   width: 100vw;
   max-width: 1440px;
   height: 100vh;
+  max-height: 1095px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`
+const CardsSection = styled.section`
+  width: 9h0vw;
+  max-width: 1440px;
+  height: 80vh;
   max-height: 829px;
   border-radius: 25px;
   padding-top: 56px;
+  margin-top: 20px;
+  background-color: #f6f6f6;
+  z-index: -5;
+  overflow: auto;
+  scrollbar-width: none;
 `
 
 const CardsContainer = styled.div`
-  width: 100vw;
-  max-width: 1440px;
-  height: 100vh;
-  max-height: 829px;
-  border-radius: 25px;
+  width: 90vw;
+  height: 829px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-  overflow: scroll;
+  scrollbar-width: none;
   align-items: space-evenly;
 `
 

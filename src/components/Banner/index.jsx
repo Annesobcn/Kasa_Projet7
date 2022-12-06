@@ -6,10 +6,9 @@ const BannerContainer = styled.div`
   position: relative;
   background-color: #f6f6f6;
   border-radius: 25px;
-  height: 20vh;
-  max-height: 223px;
-  width: 100vw;
-  max-width: 1440px;
+  height: 223px;
+  width: 90vw;
+  max-width: 1240px;
   font-size: 16px;
 `
 const BannerImage = styled.img`
@@ -24,8 +23,8 @@ const BannerText = styled.text`
   position: absolute;
   text-align: center;
   top: 35%;
-  width: 100%;
-  height: 100%;
+  width: 90vw;
+  height: 100vh;
   font-family: montserrat;
   font-size: 3rem;
   color: white;

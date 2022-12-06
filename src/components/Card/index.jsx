@@ -27,6 +27,7 @@ const CardImage = styled.img`
 const CardWrapper = styled.div`
   width: 340px;
   height: 340px;
+  z-index: 0;
   border-radius: 10px;
   margin: 10px;
   background: rgb(11, 11, 11);
@@ -35,7 +36,6 @@ const CardWrapper = styled.div`
     rgba(11, 11, 11, 1) 0%,
     rgba(255, 255, 255, 0.006711409395973145) 50%
   );
-  z-index: 0;
   &:hover {
     cursor: pointer;
   }

@@ -24,14 +24,14 @@ const HomeContainer = styled.div`
 `
 
 const CardsContainer = styled.div`
-  max-width: 1190px;
-  margin: 5vh;
+  max-width: 1145px;
+  margin: 4vh;
   width: 90vw;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
-  padding: 5vh 4vw;
+  padding: 5vh 3vw;
   border-radius: 25px;
   background-color: ${colors.secondary};
 

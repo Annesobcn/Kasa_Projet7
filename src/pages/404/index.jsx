@@ -16,19 +16,25 @@ const Page404 = styled.div`
 
 const Titre404 = styled.h1`
   color: ${colors.primary};
-  font-size: 150px;
+  font-size: 288px;
+  font-weight: 700;
+  margin-bottom: 50px;
 
   @media (max-width: 375px) {
-    font-size: 95px;
+    font-size: 96px;
   }
 `
 const Texte404 = styled.span`
   color: ${colors.primary};
   display: block;
+  line-height: 142.6px;
   font-size: 36px;
 
   @media (max-width: 375px) {
     font-size: 18px;
+    line-height: 142%;
+    position: absolute;
+    top: 25vh;
   }
 `
 
@@ -37,10 +43,13 @@ const HomeLink = styled.a`
   text-decoration: underline;
   font-size: 18px;
   position: absolute;
-  bottom: 10vh;
-  left: 35vw;
+  left: 40vw;
+  top: 86vh;
+
   @media (max-width: 375px) {
     font-size: 14px;
+    left: 18vw;
+    top: 56vh;
   }
 `
 

@@ -18,7 +18,10 @@ const NavContainer = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 1rem;
+  font-size: 24px;
+  @media (max-width: 375px) {
+    font-size: 12px;
+  }
 `
 const Nav = styled.nav`
   ${NavContainer};
@@ -29,7 +32,7 @@ export const NavbarLink = styled(Link)`
   font-family: Montserrat;
   color: ${colors.primary};
   text-decoration: none;
-  font-size: 1.5rem;
+
   text-align: center;
   &:active {
     text-decoration: underline;

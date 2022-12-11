@@ -10,6 +10,12 @@ const BannerContainer = styled.div`
   width: 90vw;
   max-width: 1240px;
   font-size: 16px;
+
+  @media (max-width: 375px) {
+    width: 335px;
+    height: 111px;
+    border-radius: 10px;
+  }
 `
 const BannerImage = styled.img`
   position: absolute;
@@ -18,6 +24,9 @@ const BannerImage = styled.img`
   object-fit: cover;
   border-radius: 25px;
   filter: brightness(0.7);
+  @media (max-width: 375px) {
+    border-radius: 10px;
+  }
 `
 const BannerText = styled.span`
   position: absolute;
@@ -27,6 +36,9 @@ const BannerText = styled.span`
   font-family: montserrat;
   font-size: 3rem;
   color: white;
+  @media (max-width: 375px) {
+    font-size: 24px;
+  }
 `
 
 function Banner() {

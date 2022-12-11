@@ -16,13 +16,17 @@ const HomeContainer = styled.div`
   overflow: auto;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none;
+  @media (max-width: 375px) {
+    padding-left: 10px;
+    max-width: 336px;
+    padding-top: 0;
+  }
 `
 
 const CardsContainer = styled.div`
-  max-width: 1240px;
+  max-width: 1190px;
   margin: 5vh;
   width: 90vw;
-  max-height: 829px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -30,6 +34,16 @@ const CardsContainer = styled.div`
   padding: 5vh 4vw;
   border-radius: 25px;
   background-color: ${colors.secondary};
+
+  @media (max-width: 375px) {
+    max-width: 335px;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 1vh 1vw;
+    margin: 0.1vh 1vw;
+    background-color: #ffffff;
+    border-radius: 10px;
+  }
 `
 
 function Home() {

@@ -21,6 +21,7 @@ const NavContainer = styled.nav`
   font-size: 24px;
   @media (max-width: 375px) {
     font-size: 12px;
+    padding: 15px;
   }
 `
 const Nav = styled.nav`
@@ -36,6 +37,11 @@ export const NavbarLink = styled(Link)`
   text-align: center;
   &:active {
     text-decoration: underline;
+  }
+
+  @media (max-width: 375px) {
+    text-transform: uppercase;
+    padding: 2px 10px;
   }
 `
 

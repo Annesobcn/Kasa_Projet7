@@ -7,6 +7,7 @@ import Fiche from './pages/FicheLogement'
 import Apropos from './pages/Apropos'
 import Header from './components/Header'
 import Footer from './components/Footer'
+import Erreur404 from './pages/404'
 
 ReactDOM.render(
   <React.StrictMode>
@@ -21,6 +22,9 @@ ReactDOM.render(
         </Route>
         <Route path="/about">
           <Apropos />
+        </Route>
+        <Route path="*">
+          <Erreur404 />
         </Route>
       </Switch>
       <Footer />

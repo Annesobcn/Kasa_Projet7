@@ -4,7 +4,8 @@ import colors from '../../utils/style/colors'
 import arrow from '../../assets/arrow.svg'
 
 const DropDownContainer = styled.div`
-  width: 80%;
+  width: 100vw;
+  max-width: 1023px;
   margin: 2%;
   border-radius: 10px;
   background-color: ${colors.primary};
@@ -13,11 +14,12 @@ const DropDownContainer = styled.div`
 const DropDownHeader = styled.header`
   align-items: center;
   background-color: #ff6060;
-  border-radius: 5px;
+  border-radius: 10px;
   display: inline-flex;
   height: 25%;
-  min-height: 50px;
-  width: 90vw;
+  min-height: 47px;
+  width: 100vw;
+  max-width: 1023px;
   text-align: left;
 `
 
@@ -33,7 +35,7 @@ const DropDownArrow = styled.span`
   display: flex;
   justify-content: flex-end;
   margin-right: 10px;
-  width: 90vw;
+  width: 100vw;
   &:hover {
     cursor: pointer;
   }
@@ -48,7 +50,7 @@ const DropDownText = styled.ul`
   border-bottom-right-radius: 5px;
   color: ${colors.primary};
   height: 75%;
-  width: 88vw;
+  max-width: 1023px;
   margin-top: -10px;
   margin-bottom: -10px;
   min-height: 100px;

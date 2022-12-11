@@ -24,7 +24,6 @@ const BannerText = styled.span`
   text-align: center;
   top: 35%;
   width: 90vw;
-  height: 100vh;
   font-family: montserrat;
   font-size: 3rem;
   color: white;

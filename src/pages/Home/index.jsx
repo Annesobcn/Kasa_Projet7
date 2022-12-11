@@ -8,35 +8,33 @@ import colors from '../../utils/style/colors'
 const HomeContainer = styled.div`
   width: 100vw;
   max-width: 1440px;
-  height: 100vh;
-  max-height: 1095px;
+  height: 1095px;
   display: flex;
   flex-direction: column;
   align-items: center;
 `
 const CardsSection = styled.section`
-  width: 9h0vw;
+  width: 90vw;
   max-width: 1440px;
-  height: 80vh;
-  max-height: 829px;
   border-radius: 25px;
-  padding-top: 56px;
   margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-items: space-evenly;
   background-color: ${colors.secondary};
   z-index: -5;
-  overflow: auto;
-  scrollbar-width: none;
 `
 
 const CardsContainer = styled.div`
   width: 90vw;
-  height: 100vh;
+  height: 750px;
   display: flex;
+  padding-top: 5vh;
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-  scrollbar-width: none;
-  align-items: space-evenly;
+  overflow: auto;
 `
 
 function Home() {
@@ -48,7 +46,7 @@ function Home() {
           {logements &&
             logements.map((logement) => {
               return (
-                <Link to="/src/pages/FicheLogement" key={logement.id}>
+                <Link to="/ficheLogement" key={logement.id}>
                   <Card
                     key={logement.id}
                     picture={logement.cover}

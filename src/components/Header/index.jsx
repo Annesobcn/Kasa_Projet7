@@ -1,7 +1,9 @@
+import { useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import styled from 'styled-components'
 import LogoKasa from '../../assets/LogoKasa.svg'
 import colors from '../../utils/style/colors'
+import { NavLink } from 'react-router-dom'
 
 const HomeLogo = styled.img`
   height: 7vh;
@@ -18,16 +20,19 @@ const NavContainer = styled.nav`
   align-items: center;
   font-size: 1rem;
 `
-export const StyledLink = styled(Link)`
+const Nav = styled.nav`
+  ${NavContainer};
+`
+
+export const NavbarLink = styled(Link)`
   padding: 2px 15px;
   font-family: Montserrat;
   color: ${colors.primary};
   text-decoration: none;
   font-size: 1.5rem;
   text-align: center;
-  width: 25vw;
   &:active {
-    border-bottom: 2px solid;
+    text-decoration: underline;
   }
 `
 
@@ -37,10 +42,21 @@ function Header() {
       <Link to="/">
         <HomeLogo src={LogoKasa} />
       </Link>
-      <div>
-        <StyledLink to="/">Accueil</StyledLink>
-        <StyledLink to="/about">A propos</StyledLink>
-      </div>
+      <Nav>
+        <NavbarLink
+          to="/"
+          className={({ isActive }) => ('underline' + isActive ? 'active' : '')}
+        >
+          Accueil
+        </NavbarLink>
+
+        <NavbarLink
+          to="/about"
+          className={({ isActive }) => ('underline' + isActive ? 'active' : '')}
+        >
+          A propos
+        </NavbarLink>
+      </Nav>
     </NavContainer>
   )
 }

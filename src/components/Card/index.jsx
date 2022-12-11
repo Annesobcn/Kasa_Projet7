@@ -1,71 +1,65 @@
-import { Component } from 'react'
+import React from 'react'
 import styled from 'styled-components'
-import propTypes from 'prop-types'
 
-const CardTitle = styled.p`
+const CardWrapper = styled.div`
+  max-width: 340px;
+  height: 340px;
+  border-radius: 10px;
+  margin: 10px;
+  transition: 200ms;
   position: relative;
-  width: 325px;
-  top: -20%;
-  left: 5%;
-  color: #ffffff;
-  font-family: montserrat;
-  font-size: 1.1rem;
-  font-weight: 500;
-  z-index: 2;
-`
 
+  &:hover {
+    cursor: pointer;
+    box-shadow: 2px 2px 8px #e2e3e9;
+
+    > CardImage {
+      opacity: 0.3;
+    }
+  }
+`
 const CardImage = styled.img`
   height: 340px;
-  width: 340px;
+  max-width: 340px;
   position: relative;
   object-fit: cover;
   align-self: center;
   border-radius: 10px;
-  z-index: -1;
 `
-
-const CardWrapper = styled.div`
-  width: 340px;
-  height: 340px;
-  border-radius: 10px;
-  margin: 10px;
+const CardOmbre = styled.div`
   background: rgb(11, 11, 11);
   background: linear-gradient(
     0deg,
     rgba(11, 11, 11, 1) 0%,
     rgba(255, 255, 255, 0.006711409395973145) 50%
   );
-  transition: 200ms;
-  &:hover {
-    cursor: pointer;
-    box-shadow: 2px 2px 8px #e2e3e9;
-  }
+  border-radius: 10px;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
 `
 
-class Card extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {}
-  }
+const CardTitle = styled.p`
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin-right: 6px;
+  color: #ffffff;
+  font-family: montserrat;
+  font-size: 18px;
+  font-weight: 500;
+`
 
-  render() {
-    const { picture, title } = this.props
-    return (
-      <CardWrapper>
-        <CardImage src={picture} alt={title} />
-        <CardTitle>{title}</CardTitle>
-      </CardWrapper>
-    )
-  }
+const Card = ({ picture, title }) => {
+  return (
+    <CardWrapper>
+      <CardImage src={picture} alt={title} />
+      <CardOmbre></CardOmbre>
+      <CardTitle>{title}</CardTitle>
+    </CardWrapper>
+  )
 }
 
-Card.propTypes = {
-  picture: propTypes.string.isRequired,
-  title: propTypes.string.isRequired,
-}
-
-Card.defaultProps = {
-  picture: '',
-  title: '',
-}
 export default Card

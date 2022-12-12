@@ -11,7 +11,7 @@ const ImageLogement = styled.img`
   height: 415px;
 `
 const Arrow = styled.button`
-  wwidth: 46px;
+  width: 46px;
   height: 79px;
 `
 
@@ -19,9 +19,9 @@ function Carrousel() {
   return (
     <div>
       {logements &&
-        logements.map((slide) => (
+        logements.map((slide, index) => (
           <div key={slide.id}>
-            <ImageLogement src={slide.pictures} alt="propriété" />
+            <ImageLogement src={`${slide.pictures}-${index}`} alt="propriété" />
           </div>
         ))}
     </div>

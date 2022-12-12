@@ -6,6 +6,7 @@ import Carrousel from '../../components/Carrousel'
 
 const Fiche = styled.div`
   width: 1440px;
+  height: 1024px;
 `
 function FichePropriete() {
   const id = useParams()
@@ -14,7 +15,7 @@ function FichePropriete() {
   return (
     <div>
       <Fiche>
-        <Carrousel />
+        <Carrousel pictures={ficheLogement?.pictures} />
       </Fiche>
     </div>
   )

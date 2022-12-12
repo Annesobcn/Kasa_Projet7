@@ -3,11 +3,12 @@ import ReactDOM from 'react-dom'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 import Home from './pages/Home'
-import Fiche from './pages/FicheLogement'
+
 import Apropos from './pages/Apropos'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Erreur404 from './pages/404'
+import FichePropriete from './pages/FicheLogement'
 
 ReactDOM.render(
   <React.StrictMode>
@@ -17,8 +18,8 @@ ReactDOM.render(
         <Route exact path="/">
           <Home />
         </Route>
-        <Route path="/fichelogement">
-          <Fiche />
+        <Route path="/fichelogement/:id">
+          <FichePropriete />
         </Route>
         <Route path="/about">
           <Apropos />

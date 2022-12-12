@@ -52,18 +52,16 @@ function Home() {
       <Banner />
 
       <CardsContainer>
-        {logements &&
-          logements.map((logement) => {
-            return (
-              <Link to="/ficheLogement" key={logement.id}>
-                <Card
-                  key={logement.id}
-                  picture={logement.cover}
-                  title={logement.title}
-                />
-              </Link>
-            )
-          })}
+        {logements.map((logement) => (
+          <Link to={'/fichelogement/' + logement.id + '/#'} key={logement.id}>
+            <Card
+              key={logement.id}
+              id={logement.id}
+              picture={logement.cover}
+              title={logement.title}
+            />
+          </Link>
+        ))}
       </CardsContainer>
     </HomeContainer>
   )

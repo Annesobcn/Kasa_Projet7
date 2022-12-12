@@ -6,7 +6,6 @@ import Carrousel from '../../components/Carrousel'
 
 const Fiche = styled.div`
   width: 1440px;
-  background-color: red;
 `
 function FichePropriete() {
   const id = useParams()

@@ -2,14 +2,10 @@ import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 import arrowForwardCarrousel from '../../assets/arrowForwardCarrousel.svg'
 import arrowBackwardCarrousel from '../../assets/arrowBackwardCarrousel.svg'
-import { Slide } from 'react-slideshow-image'
+import { Fade } from 'react-slideshow-image'
 import { useParams } from 'react-router'
 import logements from '../../assets/logements.json'
 
-const ImageLogement = styled.img`
-  width: 1240px;
-  height: 415px;
-`
 const ArrowForward = styled.button`
   width: 46px;
   height: 79px;
@@ -45,10 +41,10 @@ const Carrousel = (props) => {
     <ImagePropriete
       {...properties}
       key={index}
-      src={picture}
+      src={`${picture} - ${index}`}
       alt={picture.title}
     />
   ))
-  return <Slide>{affichagePictures}</Slide>
+  return <Fade>{affichagePictures}</Fade>
 }
 export default Carrousel

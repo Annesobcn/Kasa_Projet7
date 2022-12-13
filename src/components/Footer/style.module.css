@@ -1,0 +1,37 @@
+.footercontainer {
+    height: 20vh;
+    width: 100vw;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    text-align: center;
+
+}
+
+.footertext {
+    color: white;
+    font-family: montserrat;
+    font-size: 1.5rem;
+}
+
+.homelogowhite {
+    height: 25%;
+}
+
+@media (max-width: 375px) {
+    .footercontainer {
+        width: 375px;
+        height: 208px;
+    }
+
+    .footertext {
+        font-size: 12px;
+    }
+
+    .homelogowhite {
+        height: 12vw;
+
+    }
+}

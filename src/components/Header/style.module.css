@@ -1,0 +1,54 @@
+header {
+    height: 7vh;
+    width: 90vw;
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.3vw 0;
+}
+
+.homelogo {
+    height: 7vh;
+    width: 22vw;
+}
+
+.navcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-size: 24px;
+
+}
+
+.headerlink {
+    font-family: Montserrat;
+    color: #FF6060;
+    text-decoration: none;
+    padding-left: 6vw;
+    text-align: center;
+
+}
+
+.activelink {
+    text-decoration: underline;
+}
+
+@media (max-width: 375px) {
+    .navcontainer {
+        font-size: 12px;
+        padding: 5px;
+
+    }
+
+    .headerlink {
+        text-transform: uppercase;
+        padding-left: 3vw;
+    }
+
+    .homelogo {
+        width: 145px;
+        height: 47px;
+    }
+}

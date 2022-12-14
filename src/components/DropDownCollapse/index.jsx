@@ -8,16 +8,14 @@ function DropdownCollapse({ titre, description }) {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <section
-      className={style.dropdowncontainer}
-      id={`DropDown${titre}`}
-      onClick={() => setIsOpen(!isOpen)}
-    >
+    <section className={style.dropdowncontainer} id={`DropDown${titre}`}>
       <div className={style.dropdownheader}>
         <h2 className={style.dropdowntitle}>{titre}</h2>
         <span
-          className={style.dropdownarrow}
-          onChange={style.dropdownarrowisOpen}
+          className={`style.dropdownarrow ${
+            isOpen === !isOpen ? 'isrotated' : ''
+          }`}
+          onClick={() => setIsOpen(!isOpen)}
         >
           <img src={arrowdown} alt="En savoir plus" />
         </span>

@@ -39,7 +39,7 @@
     cursor: pointer;
 }
 
-.dropdownarrowisOpen {
+.isrotated {
     transform: rotate(-180deg);
     color: aqua;
 }

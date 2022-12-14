@@ -1,0 +1,57 @@
+.page404 {
+    text-align: center;
+    font-family: montserrat;
+    width: 100vw;
+    max-width: 1440px;
+    height: 100vh;
+    max-height: 1024px;
+    position: relative;
+}
+
+.titre404 {
+    color: #FF6060;
+    font-size: 288px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.texte404 {
+    color: #FF6060;
+    display: block;
+    line-height: 142.6px;
+    font-size: 36px;
+}
+
+.homelink {
+    color: #FF6060;
+    text-decoration: underline;
+    font-size: 18px;
+    position: absolute;
+    left: 40%;
+    top: 86vh;
+}
+
+@media (max-width: 375px) {
+
+    .titre404 {
+        font-size: 96px;
+        margin-top: 150px;
+    }
+
+    .texte404 {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 142%;
+        position: absolute;
+        top: 15vh;
+        max-width: 220vw;
+        text-align: center;
+    }
+
+    .homelink {
+        font-size: 14px;
+        left: 18vw;
+        top: 40vh;
+    }
+
+}

@@ -1,0 +1,45 @@
+.homecontainer {
+    display: flex;
+    width: 100vw;
+    max-width: 1440px;
+    padding-top: 5vh;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: auto;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+}
+
+.cardscontainer {
+    max-width: 1145px;
+    margin: 4vh;
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 5vh 0.1vw;
+    border-radius: 25px;
+    background-color: #F6F6F6;
+}
+
+
+@media (max-width: 375px) {
+    .homecontainer {
+        padding-left: 10px;
+        max-width: 336px;
+        padding-top: 0;
+    }
+
+    .cardscontainer {
+        max-width: 335px;
+        border-radius: 10px;
+        margin: 20px;
+        padding: 1vh 1vw;
+        margin: 0.1vh 1vw;
+        background-color: #ffffff;
+        border-radius: 10px;
+    }
+}

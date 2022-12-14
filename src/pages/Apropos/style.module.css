@@ -1,0 +1,51 @@
+.aproposcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2vw;
+}
+
+.aproposbanner {
+    position: relative;
+    background-color: #F6F6F6;
+    border-radius: 25px;
+    height: 223px;
+    max-width: 1240px;
+    font-size: 16px;
+    width: 90vw;
+}
+
+.bannerimage2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+    filter: brightness(0.7);
+}
+
+.dropdownssection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 375px) {
+    .aproposbanner {
+        width: 100%;
+        border-radius: 25px;
+    }
+
+    .bannerimage2 {
+        object-fit: fill;
+        border-radius: 25px;
+    }
+}
+
+
+@media screen and (min-width: 1450px) {
+    .aproposcontainer {
+        max-width: 1440px;
+    }
+}

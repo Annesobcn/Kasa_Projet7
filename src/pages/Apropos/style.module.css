@@ -3,7 +3,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-right: 2vw;
 }
 
 .aproposbanner {
@@ -38,9 +37,12 @@
 }
 
 @media (max-width: 375px) {
+
+
     .aproposbanner {
         width: 100%;
         border-radius: 25px;
+        max-width: 93vw;
     }
 
     .bannerimage2 {

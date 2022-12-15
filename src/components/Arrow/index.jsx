@@ -1,0 +1,19 @@
+import React from 'react'
+
+export default function Arrow(props) {
+  return (
+    <svg
+      className={props.className}
+      height={props.height}
+      width={props.width}
+      viewBox="0 0 24 15"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M21.7268 14.1403L23.8597 11.9951L11.9298 0.0764155L-5.01125e-05 12.0072L2.13287 14.1403L11.9298 4.34257L21.7268 14.1403Z"
+        fill="white"
+      />
+    </svg>
+  )
+}

@@ -28,7 +28,13 @@
 .dropdownssection {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.dropdowncontainer {
+    margin-bottom: 10px;
+    position: relative;
 }
 
 @media (max-width: 375px) {

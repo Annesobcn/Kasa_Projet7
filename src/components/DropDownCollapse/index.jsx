@@ -1,31 +1,37 @@
-import React, { useState } from 'react'
-import { useEffect } from 'react'
-import arrowup from '../../assets/arrowup.svg'
-import arrowdown from '../../assets/arrowdown.svg'
-import * as style from './style.module.css'
-function DropdownCollapse({ titre, description }) {
-  /* Crée un Hook d'état */
-  const [isOpen, setIsOpen] = useState(false)
+import React, { useState, useRef } from 'react'
 
+import Arrow from '../Arrow'
+import './style.css'
+
+export default function DropDownCollapse(props) {
+  const [setOpen, setOpenState] = useState('')
+  const [setHeight, setHeightState] = useState('0px')
+  const [setRotate, setRotateState] = useState('arrowup')
+
+  const content = useRef(null)
+
+  function DropDownToggle() {
+    setOpenState(setOpen === '' ? 'open' : '')
+    setHeightState(
+      setOpen === 'open' ? '0px' : `${content.current.scrollHeight}px`
+    )
+    setRotateState(setOpen === 'open' ? 'arrowup' : 'arrowdown')
+  }
   return (
-    <section className={style.dropdowncontainer} id={`DropDown${titre}`}>
-      <div className={style.dropdownheader}>
-        <h2 className={style.dropdowntitle}>{titre}</h2>
-        <span
-          className={`style.dropdownarrow ${
-            isOpen === !isOpen ? 'isrotated' : ''
-          }`}
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          <img src={arrowdown} alt="En savoir plus" />
-        </span>
+    <section className="dropdowncontainer">
+      <button className={`dropdownheader ${setOpen}`} onClick={DropDownToggle}>
+        <h2 className="dropdowntitle">{props.titre}</h2>
+        <Arrow className={`${setRotate}`} />
+      </button>
+      <div
+        ref={content}
+        style={{ maxHeight: `${setHeight}` }}
+        className="dropdowncontent"
+      >
+        <div>
+          <p className="dropdowntext">{props.content}</p>
+        </div>
       </div>
-      {
-        /* Si le dropdown est à TRUE alors il affichera la description */
-        isOpen && <div className={style.dropdowntext}>{description}</div>
-      }
     </section>
   )
 }
-
-export default DropdownCollapse

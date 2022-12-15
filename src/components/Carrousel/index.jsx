@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 import arrowForwardCarrousel from '../../assets/arrowForwardCarrousel.svg'
 import arrowBackwardCarrousel from '../../assets/arrowBackwardCarrousel.svg'
-import { Fade } from 'react-slideshow-image'
+
 import { useParams } from 'react-router'
 import logements from '../../assets/logements.json'
 
@@ -45,6 +45,6 @@ const Carrousel = (props) => {
       alt={picture.title}
     />
   ))
-  return <Fade>{affichagePictures}</Fade>
+  return <div>{affichagePictures}</div>
 }
 export default Carrousel

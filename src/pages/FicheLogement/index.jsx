@@ -1,23 +1,25 @@
 import React from 'react'
-import { useParams, Navigate } from 'react-router'
+import { useParams, Redirect } from 'react-router-dom'
 import logements from '../../assets/logements.json'
-import styled from 'styled-components'
 import Carrousel from '../../components/Carrousel'
+import * as style from './style.module.css'
 
-const Fiche = styled.div`
-  width: 1440px;
-  height: 1024px;
-`
 function FichePropriete() {
   const id = useParams()
   const ficheLogement = logements.find((logement) => logement.id === id.id)
 
   return (
-    <div>
-      <Fiche>
-        <Carrousel pictures={ficheLogement?.pictures} />
-      </Fiche>
-    </div>
+    <>
+      {ficheLogement ? (
+        <div>
+          <div className={style.fiche}>
+            <Carrousel pictures={ficheLogement?.pictures} />
+          </div>
+        </div>
+      ) : (
+        <Redirect replace to="/404" />
+      )}
+    </>
   )
 }
 export default FichePropriete

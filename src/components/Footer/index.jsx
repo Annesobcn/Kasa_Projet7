@@ -1,4 +1,3 @@
-import styled from 'styled-components'
 import LogoKasaBlanc from '../../assets/LogoKasaBlanc.svg'
 import * as style from './style.module.css'
 

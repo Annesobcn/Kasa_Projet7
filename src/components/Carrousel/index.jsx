@@ -1,50 +1,58 @@
-import React, { useState, useEffect } from 'react'
-import styled from 'styled-components'
-import arrowForwardCarrousel from '../../assets/arrowForwardCarrousel.svg'
-import arrowBackwardCarrousel from '../../assets/arrowBackwardCarrousel.svg'
+import React, { useState } from 'react'
+import * as style from './style.module.css'
+import arrow from '../../assets/arrowForwardCarrousel.svg'
+import arrowback from '../../assets/arrowBackwardCarrousel.svg'
 
-import { useParams } from 'react-router'
-import logements from '../../assets/logements.json'
+const Carrousel = ({ pictures }) => {
+  const [current, setCurrent] = useState(0)
+  const length = pictures.length
 
-const ArrowForward = styled.button`
-  width: 46px;
-  height: 79px;
-  background: none;
-  border: 0px;
-  color: white;
-`
-const ArrowBackward = styled(ArrowForward)
+  const nextPic = () => {
+    setCurrent(current === length - 1 ? 0 : current + 1)
+  }
 
-const ImagePropriete = styled.img`
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  background-size: cover;
-  width: 1240px;
-  height: 415px;
-`
-const properties = {
-  prevArrow: <ArrowForward>{arrowForwardCarrousel}</ArrowForward>,
-  nextArrow: <ArrowBackward>{arrowBackwardCarrousel}</ArrowBackward>,
+  const prevPic = () => {
+    setCurrent(current === 0 ? length - 1 : current - 1)
+  }
+
+  return (
+    <div className={style.carrousel}>
+      {pictures.map((picture, index) => {
+        return (
+          <div
+            key={index}
+            className={` index === current ? ${style.carrouselpictureactive} : ${style.carrouselpictureinactive}`}
+          >
+            {index === current && (
+              <img
+                src={picture}
+                alt="image du logement"
+                className={style.carrouselpicture}
+              />
+            )}
+          </div>
+        )
+      })}
+
+      {length > 1 ? (
+        <>
+          <div className={style.previous} onClick={prevPic}>
+            <img
+              src={arrowback}
+              alt="image précédente"
+              className={style.arrowback}
+            />
+          </div>
+          <div className={style.next} onClick={nextPic}>
+            <img src={arrow} alt="image suivante" className={style.arrow} />
+          </div>
+        </>
+      ) : null}
+      <div className={style.containerindex}>
+        {current + 1} / {length}
+      </div>
+    </div>
+  )
 }
-const Carrousel = (props) => {
-  const { id } = useParams()
-  const [pictures, setPictures] = useState([])
 
-  useEffect(() => {
-    const filterPictures = logements.find((logement) => logement.id === id)
-      .pictures
-    setPictures(filterPictures)
-  }, [id])
-
-  const affichagePictures = pictures.map((picture, index) => (
-    <ImagePropriete
-      {...properties}
-      key={index}
-      src={`${picture} - ${index}`}
-      alt={picture.title}
-    />
-  ))
-  return <div>{affichagePictures}</div>
-}
 export default Carrousel

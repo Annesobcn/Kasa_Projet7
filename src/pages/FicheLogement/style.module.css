@@ -1,4 +1,16 @@
 .fiche {
-    width: 1440px;
+    width: 1240px;
     height: 1024px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 375px) {
+    .fiche {
+        width: 335px;
+        height: 255px;
+        border-radius: 10px;
+    }
 }

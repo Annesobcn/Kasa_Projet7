@@ -24,7 +24,7 @@ const RatingStars = ({ rating }) => {
             alt="étoile grise"
           />
         )
-      ))}
+      )}
     </div>
   )
 }

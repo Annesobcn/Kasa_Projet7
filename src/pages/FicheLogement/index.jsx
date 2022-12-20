@@ -29,7 +29,7 @@ function FichePropriete() {
               <h1 className={style.titrelogement}>{title}</h1>
               <p className={style.adresse}>{location}</p>
               <div className={style.tags}>
-                {fichelogement.tags.map((tag, index) => (
+                {ficheLogement.tags.map((tag, index) => (
                   <Tags key={index} getTag={tag} />
                 ))}
               </div>

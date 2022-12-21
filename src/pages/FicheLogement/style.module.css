@@ -14,7 +14,30 @@
         border-radius: 10px;
     }
 }
+.fichecontainer {
+    display:flex;
+    width:1240px;
 
+}
+
+.informations {
+    color:#ff6060;
+    font-family:montserrat;
+    width:635px;
+    height:77px;
+    display:flex;
+    flex-direction:column;
+}
+.titrelogement {
+    font-size:36px;
+    font-weight:500;
+    margin: 0;
+}
+.adresse {
+    font-family:montserrat;
+    font-size:18px;
+    font-weight:500;
+}
 .tags {
 
     display: flex;

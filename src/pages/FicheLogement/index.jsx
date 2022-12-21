@@ -44,8 +44,8 @@ function FichePropriete() {
           </div>
         
         <div className={style.dropdowns}> 
-        <DropDownCollapse title="description" content={description} />
-        <DropDownCollapse title="equipement" content={equipments} />
+        <DropDownCollapse title="Description" content={description} />
+        <DropDownCollapse title="Equipement" content={equipments} />
         </div>
         </section>
       ) : (

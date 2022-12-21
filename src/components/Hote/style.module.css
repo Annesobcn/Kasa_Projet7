@@ -1,3 +1,8 @@
 .hote {
     display: flex;
 }
+
+.hotephoto{ 
+    width: 200px;
+    border-radius:50%;
+}

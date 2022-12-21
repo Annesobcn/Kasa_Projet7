@@ -5,6 +5,7 @@ import Carrousel from '../../components/Carrousel'
 import RatingStars from '../../components/RatingStars'
 import Tags from '../../components/Tags'
 import Hote from '../../components/Hote'
+import DropDownCollapse from '../../components/DropDownCollapse'
 import * as style from './style.module.css'
 
 function FichePropriete() {
@@ -35,11 +36,17 @@ function FichePropriete() {
                 ))}
               </div>
             </div>
-          </div>
+          
           <div className={style.hoterating}>
             <RatingStars rating={rating} />
-            <Hote hote={hote} />
+            <Hote hote={host} />
           </div>
+          </div>
+        
+        <div className={style.dropdowns}> 
+        <DropDownCollapse title="description" content={description} />
+        <DropDownCollapse title="equipement" content={equipments} />
+        </div>
         </section>
       ) : (
         <Redirect replace to="/404" />

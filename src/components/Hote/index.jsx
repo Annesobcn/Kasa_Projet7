@@ -13,7 +13,7 @@ const Hote = ({ hote }) => {
                 <p className={style.lastname}>{lastname.trim()}</p>
             </div>
 
-            <img src={host.picture} alt="Proprietaire" className={hotephoto} />
+            <img src={hote.picture} alt="Proprietaire" className={style.hotephoto} />
         </div>
     )
 }

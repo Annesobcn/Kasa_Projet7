@@ -1,8 +1,9 @@
 .tag {
     display: flex;
     background-color: #FF6060;
-    width: 10px;
-    height: 5px;
+    width: 115px;
+    height: 25px;
+    border-radius: 10px;
 }
 
 .tagtexte {

@@ -1,5 +1,6 @@
 .fiche {
-    width: 1240px;
+    width: 90vw;
+    max-width: 1240px;
     height: 1024px;
     display: flex;
     flex-direction: column;
@@ -14,32 +15,44 @@
         border-radius: 10px;
     }
 }
+
 .fichecontainer {
-    display:flex;
-    width:1240px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90vw;
+    max-width: 1240px;
 
 }
 
 .informations {
-    color:#ff6060;
-    font-family:montserrat;
-    width:635px;
-    height:77px;
-    display:flex;
-    flex-direction:column;
+    color: #ff6060;
+    font-family: montserrat;
+    width: 635px;
+    height: 77px;
+    display: flex;
+    flex-direction: column;
 }
+
 .titrelogement {
-    font-size:36px;
-    font-weight:500;
+    font-size: 36px;
+    font-weight: 500;
     margin: 0;
 }
+
 .adresse {
-    font-family:montserrat;
-    font-size:18px;
-    font-weight:500;
+    font-family: montserrat;
+    font-size: 18px;
+    font-weight: 500;
 }
+
 .tags {
 
     display: flex;
     flex-direction: row;
+}
+
+.dropdowncontainer {
+    display:flex;
+    flex-direction:row;
 }

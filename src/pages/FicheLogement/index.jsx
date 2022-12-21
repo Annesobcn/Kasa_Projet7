@@ -18,7 +18,6 @@ function FichePropriete() {
     host,
     equipments,
     description,
-    pictures,
   } = ficheLogement
 
   return (
@@ -36,17 +35,17 @@ function FichePropriete() {
                 ))}
               </div>
             </div>
-          
-          <div className={style.hoterating}>
-            <RatingStars rating={rating} />
-            <Hote hote={host} />
+
+            <div className={style.hoterating}>
+              <Hote hote={host} />
+              <RatingStars rating={rating} />
+            </div>
           </div>
+
+          <div className={style.dropdowns}>
+            <DropDownCollapse titre="Description" content={description} />
+            <DropDownCollapse titre="Equipement" content={equipments} />
           </div>
-        
-        <div className={style.dropdowns}> 
-        <DropDownCollapse title="Description" content={description} />
-        <DropDownCollapse title="Equipement" content={equipments} />
-        </div>
         </section>
       ) : (
         <Redirect replace to="/404" />

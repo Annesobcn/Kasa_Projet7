@@ -1,3 +1,14 @@
 .hote {
     display: flex;
 }
+
+.hotephoto {
+    border-radius: 50%;
+}
+
+.hotename {
+    font-family: montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    color:#ff6060;
+}

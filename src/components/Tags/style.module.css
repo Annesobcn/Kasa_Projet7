@@ -1,3 +1,10 @@
 .tag {
     display: flex;
+    background-color: #FF6060;
+    width: 10px;
+    height: 5px;
+}
+
+.tagtexte {
+    color: #ffffff;
 }

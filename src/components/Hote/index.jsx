@@ -1,12 +1,14 @@
 import React from "react"
 
+import * as style from './style.module.css'
+
 const Hote = ({ hote }) => {
     const isHoteSplited = hote.name.split(" ")
     const [name, lastname] = isHoteSplited
 
     return (
         <div className={style.hote}>
-            <div className={hotename}>
+            <div className={style.hotename}>
                 <p className={style.firstname}>{name.trim()}</p>
                 <p className={style.lastname}>{lastname.trim()}</p>
             </div>

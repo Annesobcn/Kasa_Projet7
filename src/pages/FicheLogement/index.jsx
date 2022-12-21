@@ -4,6 +4,7 @@ import logements from '../../assets/logements.json'
 import Carrousel from '../../components/Carrousel'
 import RatingStars from '../../components/RatingStars'
 import Tags from '../../components/Tags'
+import Hote from '../../components/Hote'
 import * as style from './style.module.css'
 
 function FichePropriete() {

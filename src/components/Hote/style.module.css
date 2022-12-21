@@ -10,5 +10,11 @@
     font-family: montserrat;
     font-size: 18px;
     font-weight: 500;
-    color:#ff6060;
+    color: #ff6060;
 }
+
+.hotephoto {
+    width: 200px;
+    border-radius: 50%;
+}
+

@@ -7,6 +7,7 @@ import Tags from '../../components/Tags'
 import Hote from '../../components/Hote'
 import DropDownCollapse from '../../components/DropDownCollapse'
 import * as style from './style.module.css'
+import styled from '../../pages/FicheLogement/styled.css'
 
 function FichePropriete() {
   const id = useParams()
@@ -43,8 +44,12 @@ function FichePropriete() {
           </div>
 
           <div className={style.dropdowns}>
-            <DropDownCollapse titre="Description" content={description} />
-            <DropDownCollapse titre="Equipement" content={equipments} />
+            <div className={style.dropdownright}>
+              <DropDownCollapse titre="Description" content={description} />
+            </div>
+            <div className={style.dropdownleft}>
+              <DropDownCollapse titre="Equipement" content={equipments} />
+            </div>
           </div>
         </section>
       ) : (

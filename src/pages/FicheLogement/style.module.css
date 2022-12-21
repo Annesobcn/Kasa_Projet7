@@ -52,7 +52,20 @@
     flex-direction: row;
 }
 
-.dropdowncontainer {
-    display:flex;
-    flex-direction:row;
+.dropdowns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.dropdownright {
+    max-width: 582px;
+    width: 582px;
+}
+
+
+
+.dropdownleft {
+    width: 582px;
+    max-width: 582px;
 }

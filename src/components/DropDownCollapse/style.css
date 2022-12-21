@@ -3,12 +3,10 @@
     flex-direction: column;
     justify-content: center;
     padding-left: 1vw;
-    margin: 1vh 10vw;
-    max-width: 90vw;
+
 }
 
 .dropdownheader {
-    width: 90vw;
     height: 47px;
     border-radius: 10px;
     background-color: #FF6060;

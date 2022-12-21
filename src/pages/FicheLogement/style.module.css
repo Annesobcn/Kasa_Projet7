@@ -1,20 +1,14 @@
 .fiche {
     width: 90vw;
     max-width: 1240px;
-    height: 1024px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 10px;
 }
 
-@media (max-width: 375px) {
-    .fiche {
-        width: 335px;
-        height: 255px;
-        border-radius: 10px;
-    }
-}
+
 
 .fichecontainer {
     display: flex;
@@ -22,6 +16,7 @@
     justify-content: space-between;
     width: 90vw;
     max-width: 1240px;
+    margin-top: 20px;
 
 }
 
@@ -37,13 +32,14 @@
 .titrelogement {
     font-size: 36px;
     font-weight: 500;
-    margin: 0;
+    margin: 0 25px 0 0;
 }
 
 .adresse {
     font-family: montserrat;
     font-size: 18px;
     font-weight: 500;
+    margin: 5px 0px 18px 0px;
 }
 
 .tags {
@@ -56,6 +52,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+margin-bottom:20px;
 }
 
 .dropdownright {
@@ -68,4 +65,19 @@
 .dropdownleft {
     width: 582px;
     max-width: 582px;
+}
+
+
+@media (max-width: 375px) {
+    .fiche {
+        width: 335px;
+        height: 255px;
+        border-radius: 10px;
+    }
+    .fichecontainer{
+        flex-direction:column;
+    }
+    .titrelogement {
+        font-size:18px;
+    }
 }

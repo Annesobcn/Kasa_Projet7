@@ -7,7 +7,6 @@ import Tags from '../../components/Tags'
 import Hote from '../../components/Hote'
 import DropDownCollapse from '../../components/DropDownCollapse'
 import * as style from './style.module.css'
-import styled from '../../pages/FicheLogement/styled.css'
 
 function FichePropriete() {
   const id = useParams()

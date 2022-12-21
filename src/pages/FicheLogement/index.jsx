@@ -37,6 +37,7 @@ function FichePropriete() {
           </div>
           <div className={style.hoterating}>
             <RatingStars rating={rating} />
+            <Hote hote={hote} />
           </div>
         </section>
       ) : (

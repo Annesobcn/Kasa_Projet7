@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ae2582b8.chunk.css",
+    "main.js": "/static/js/main.9f84544c.chunk.js",
+    "main.js.map": "/static/js/main.9f84544c.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.9080a2a8.js",
+    "runtime-main.js.map": "/static/js/runtime-main.9080a2a8.js.map",
+    "static/js/2.ad1b7198.chunk.js": "/static/js/2.ad1b7198.chunk.js",
+    "static/js/2.ad1b7198.chunk.js.map": "/static/js/2.ad1b7198.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.ae2582b8.chunk.css.map": "/static/css/main.ae2582b8.chunk.css.map",
+    "static/js/2.ad1b7198.chunk.js.LICENSE.txt": "/static/js/2.ad1b7198.chunk.js.LICENSE.txt",
+    "static/media/BackgroundSectionHeader1.bb95764b.svg": "/static/media/BackgroundSectionHeader1.bb95764b.svg",
+    "static/media/BackgroundSectionHeader2.d33fe256.svg": "/static/media/BackgroundSectionHeader2.d33fe256.svg",
+    "static/media/LogoKasa.a6101328.svg": "/static/media/LogoKasa.a6101328.svg",
+    "static/media/LogoKasaBlanc.ee689fd9.svg": "/static/media/LogoKasaBlanc.ee689fd9.svg",
+    "static/media/arrowBackwardCarrousel.19918a16.svg": "/static/media/arrowBackwardCarrousel.19918a16.svg",
+    "static/media/arrowForwardCarrousel.fcd8131c.svg": "/static/media/arrowForwardCarrousel.fcd8131c.svg",
+    "static/media/greystar.ed8dc5cc.svg": "/static/media/greystar.ed8dc5cc.svg",
+    "static/media/redstar.cad0529c.svg": "/static/media/redstar.cad0529c.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9080a2a8.js",
+    "static/js/2.ad1b7198.chunk.js",
+    "static/css/main.ae2582b8.chunk.css",
+    "static/js/main.9f84544c.chunk.js"
+  ]
+}

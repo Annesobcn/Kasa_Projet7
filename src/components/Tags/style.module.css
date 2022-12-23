@@ -19,8 +19,8 @@
 
 @media (max-width: 375px) {
     .tag {
-        width: 84px;
         height: 18px;
+        min-width: 84px;
     }
 
     .tagtexte {

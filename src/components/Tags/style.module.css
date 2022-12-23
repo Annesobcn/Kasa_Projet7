@@ -16,3 +16,15 @@
     margin: 5px 5px 0px 10px;
     align-items: center;
 }
+
+@media (max-width: 375px) {
+    .tag {
+        width: 84px;
+        height: 18px;
+    }
+
+    .tagtexte {
+        font-size: 10px;
+        margin-top: 2.5px;
+    }
+}

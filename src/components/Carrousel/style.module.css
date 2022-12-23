@@ -13,7 +13,7 @@
     object-fit: cover;
     width: 90vw;
     border-radius: 25px;
-margin-left:10px;
+    margin-left: 10px;
 }
 
 .carrouselpictureactive {
@@ -75,14 +75,30 @@ margin-left:10px;
 
 @media (max-width: 375px) {
     .carrousel {
-        width: 335px;
+        margin-top: 10px;
+        width: 100vw;
+        max-width: 330px;
         height: 255px;
     }
 
     .carrouselpicture {
         width: 335px;
         height: 255px;
+        margin-left: 0;
     }
 
+    .arrow {
+        width: 24px;
+        height: 24px;
+        top:45%;
+    }
 
+    .arrowback {
+        width: 24px;
+        height: 24px;
+        top:45%;
+    }
+    .containerindex {
+        z-index: -10;
+    }
 }

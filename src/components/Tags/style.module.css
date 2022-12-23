@@ -26,5 +26,6 @@
     .tagtexte {
         font-size: 10px;
         margin-top: 2.5px;
+        max-width: 84px;
     }
 }

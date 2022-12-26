@@ -3,7 +3,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 If you are running a version of node above v16.18.1 please follow these steps for starting:
 1: npm install postcss
-1: replace react script start with react-scripts --openssl-legacy-provider start
+2: replace react script start with react-scripts --openssl-legacy-provider start
 
 ## Available Scripts
 

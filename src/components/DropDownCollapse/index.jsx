@@ -3,28 +3,29 @@ import Arrow from '../Arrow'
 import './style.css'
 
 export default function DropDownCollapse(props) {
-  const [setOpen, setOpenState] = useState('')
-  const [setHeight, setHeightState] = useState('0px')
-  const [setRotate, setRotateState] = useState('arrowup')
+  const [openCollapse, setOpenCollapse] = useState('')
+const [heightCollapse, setHeightCollapse] = useState('0px')
+const [rotateCollapse, setRotateCollapse] = useState('arrowup')
+const content = useRef(null)
 
-  const content = useRef(null)
-
-  function DropDownToggle() {
-    setOpenState(setOpen === '' ? 'open' : '')
-    setHeightState(
-      setOpen === 'open' ? '0px' : `${content.current.scrollHeight}px`
+function DropDownToggle() {
+    setOpenCollapse(openCollapse === '' ? 'open' : '')
+    setHeightCollapse(
+     openCollapse === 'open' ? '0px' : `${content.current.scrollHeight}px`
     )
-    setRotateState(setOpen === 'open' ? 'arrowup' : 'arrowdown')
+    setRotateCollapse(openCollapse === 'open' ? 'arrowup' : 'arrowdown')
   }
+
+  
   return (
     <section className="dropdowncontainer">
-      <button className={`dropdownheader ${setOpen}`} onClick={DropDownToggle}>
+      <button className={`dropdownheader ${openCollapse}`} onClick={DropDownToggle}>
         <h2 className="dropdowntitle">{props.titre}</h2>
-        <Arrow className={`${setRotate}`} />
+        <Arrow className={`${rotateCollapse}`} />
       </button>
       <div
         ref={content}
-        style={{ maxHeight: `${setHeight}` }}
+        style={{ maxHeight: `${heightCollapse}` }}
         className="dropdowncontent"
       >
         <div>

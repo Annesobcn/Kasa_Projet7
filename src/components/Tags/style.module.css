@@ -21,6 +21,8 @@
     .tag {
         height: 18px;
         min-width: 84px;
+        border-radius:5px;
+        margin-bottom:8px;
     }
 
     .tagtexte {

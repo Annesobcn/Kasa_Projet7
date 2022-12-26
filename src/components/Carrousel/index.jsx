@@ -26,7 +26,7 @@ const Carrousel = ({ pictures }) => {
             {index === current && (
               <img
                 src={picture}
-                alt="image du logement"
+                alt="Images du logement"
                 className={style.carrouselpicture}
               />
             )}
@@ -39,12 +39,16 @@ const Carrousel = ({ pictures }) => {
           <div className={style.previous} onClick={prevPic}>
             <img
               src={arrowback}
+              // eslint-disable-next-line
               alt="image précédente"
               className={style.arrowback}
             />
           </div>
           <div className={style.next} onClick={nextPic}>
-            <img src={arrow} alt="image suivante" className={style.arrow} />
+            <img src={arrow}
+              // eslint-disable-next-line
+               alt="image suivante" 
+               className={style.arrow} />
           </div>
         </>
       ) : null}

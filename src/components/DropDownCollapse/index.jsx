@@ -28,7 +28,22 @@ export default function DropDownCollapse(props) {
         className="dropdowncontent"
       >
         <div>
-          <p className="dropdowntext">{props.content}</p>
+          {
+            props.titre !== "Equipement" ? (
+              <p  className="dropdowntext">{props.content}</p>
+            ) : (
+<div  className="dropdownlist">
+  <ul>
+
+  {props.content.map((index) =>{
+    return    <li>{index}</li>
+  })}
+  </ul>
+  </div>
+            )
+          }
+       
+          
         </div>
       </div>
     </section>

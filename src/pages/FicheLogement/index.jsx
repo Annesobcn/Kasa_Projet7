@@ -11,14 +11,19 @@ import * as style from './style.module.css'
 function FichePropriete() {
   const id = useParams()
   const ficheLogement = logements.find((logement) => logement.id === id.id)
-  const {
-    title,
-    location,
-    rating,
-    host,
-    equipments,
-    description,
-  } = ficheLogement
+ 
+  
+    const {
+      title,
+      location,
+      rating,
+      host,
+      equipments,
+      description,
+    } = ficheLogement ?? {}
+  
+  
+ 
 
   return (
     <>

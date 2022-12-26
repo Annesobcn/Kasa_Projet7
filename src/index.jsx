@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 import Home from './pages/Home'
+import "@fontsource/montserrat"
 
 import Apropos from './pages/Apropos'
 import Header from './components/Header'

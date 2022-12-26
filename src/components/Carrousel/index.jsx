@@ -40,14 +40,14 @@ const Carrousel = ({ pictures }) => {
             <img
               src={arrowback}
               // eslint-disable-next-line
-              alt="image précédente"
+              alt="précédente"
               className={style.arrowback}
             />
           </div>
           <div className={style.next} onClick={nextPic}>
             <img src={arrow}
               // eslint-disable-next-line
-               alt="image suivante" 
+               alt="suivante" 
                className={style.arrow} />
           </div>
         </>

@@ -6,7 +6,7 @@ function Apropos() {
   return (
     <div className={style.aproposcontainer}>
       <div className={style.aproposbanner}>
-        <img className={style.bannerimage2} src={BackgroundImage2} />
+        <img className={style.bannerimage2} src={BackgroundImage2} alt="Paysage" />
       </div>
       <section className={style.dropdownssection}>
         <div className={style.dropdowncontainer}>

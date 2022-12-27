@@ -35,16 +35,13 @@ function DropDownToggle() {
             ) : (
 <div  className="dropdownlist">
   <ul>
-
   {props.content.map((index) =>{
-    return    <li>{index}</li>
+    return  <li key={index}> {index}</li>
   })}
   </ul>
   </div>
             )
           }
-       
-          
         </div>
       </div>
     </section>

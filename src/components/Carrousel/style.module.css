@@ -1,10 +1,9 @@
 .carrousel {
     margin: auto;
-    
     position: relative;
     height: 415px;
     border-radius: 25px;
-    width: 100vw;
+    width: 85vw;
     max-width: 1240px;
     display: flex;
     flex-direction: column;
@@ -15,7 +14,7 @@
     border-radius: 25%;
     height: 415px;
     object-fit: cover;
-    width: 100vw;
+    width: 85vw;
     max-width: 1240px;
     border-radius: 25px;
     margin-left: 10px;

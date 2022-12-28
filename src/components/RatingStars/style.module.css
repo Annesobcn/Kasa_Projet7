@@ -1,3 +1,12 @@
 .rating {
     display: flex;
 }
+
+@media (max-width: 375px) {
+
+    .redstar,
+    .greystar {
+        height: 18px;
+        padding-top: 15px;
+    }
+}

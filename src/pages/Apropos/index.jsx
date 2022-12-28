@@ -1,4 +1,4 @@
-import BackgroundImage2 from '../../assets/BackgroundSectionHeader2.svg'
+import BackgroundImage2 from '../../assets/BackgroundSectionHeader2.png'
 import * as style from './style.module.css'
 import DropDownCollapse from '../../components/DropDownCollapse'
 
@@ -6,7 +6,11 @@ function Apropos() {
   return (
     <div className={style.aproposcontainer}>
       <div className={style.aproposbanner}>
-        <img className={style.bannerimage2} src={BackgroundImage2} alt="Paysage" />
+        <img
+          className={style.bannerimage2}
+          src={BackgroundImage2}
+          alt="Paysage"
+        />
       </div>
       <section className={style.dropdownssection}>
         <div className={style.dropdowncontainer}>

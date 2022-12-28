@@ -1,6 +1,6 @@
 .aproposcontainer {
     display: flex;
-    width:100vw;
+    width: 95vw;
     flex-direction: column;
     justify-content: center;
     align-items: center;
